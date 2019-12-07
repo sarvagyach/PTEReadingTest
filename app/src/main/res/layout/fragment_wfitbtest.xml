@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WFITBTestFragment"
+    >
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reading &amp; Writing: Fill in the blanks-Test"
+        android:textSize="18sp"
+        android:fontFamily="@font/metropolis_regular"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:padding="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/icon"
+        android:drawablePadding="13dp"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="46dp"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_qno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:fontFamily="@font/metropolis_bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                tools:text="1"
+                />
+
+            <TextView
+                android:id="@+id/text_view_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/metropolis_bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/text_view_qno"
+                android:layout_marginTop="100dp"
+                android:text=". Below is a text with blanks. Select the appropriate answer choice for each blank."
+                />
+
+            <TextView
+                android:id="@+id/text_view_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_q"
+                tools:text="A dog may be man's best friend.But lt men is not always a dog’s. Over the centuries"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_1"
+                />
+
+            <TextView
+                android:id="@+id/text_view_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_1"
+                tools:text="breeding has pulled at the canine body shape to produce what is often a grotesque distortion of the underlying wolf. Indeed, some of these distortions are, when found in people, regarded as"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_2"
+                />
+
+            <TextView
+                android:id="@+id/text_view_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_2"
+                tools:text="\nDog breeding does, though, offer a chance to those who would like to understand how body shape is controlled. The"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_3"
+                />
+
+            <TextView
+                android:id="@+id/text_view_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_3"
+                tools:text="of pedigree pooches is well recorded, their generation time is short and their"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_4"
+                />
+
+            <TextView
+                android:id="@+id/text_view_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_4"
+                tools:text="size reasonably large, so there is plenty of material to work with."
+                android:visibility="gone"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_5"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/text_view_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_5"
+                tools:text="breeds are, by definition, inbred, and this simplifies genetic analysis. Those such as Elaine Ostrander, of America's National Human Genome Research Institute, who wish to identify the genetic basis of the features of particular pedigrees thus have an idea"
+                android:visibility="gone"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_6"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_6"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/text_view_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_6"
+                tools:text="animal."
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:id="@+id/text_view_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_7"
+                android:text="Correct Answer are "
+                android:visibility="gone"
+                android:fontFamily="@font/metropolis_bold"
+                />
+
+            <TextView
+                android:id="@+id/text_view_solution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_answer"
+                android:visibility="gone"
+                android:textColor="@android:color/holo_orange_dark"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        >
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="solution"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:rippleColor="@color/rippleButton"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:layout_marginEnd="8dp"
+            app:rippleColor="@color/rippleButton"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

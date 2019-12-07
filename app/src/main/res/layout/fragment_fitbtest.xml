@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FITBTestFragment"
+    >
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reading: Fill in the blanks-Test"
+        android:textSize="18sp"
+        android:fontFamily="@font/metropolis_regular"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:padding="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/icon"
+        android:drawablePadding="13dp"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="46dp"
+        android:paddingBottom="70dp"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_qno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:fontFamily="@font/metropolis_bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                tools:text="1"
+                />
+
+            <TextView
+                android:id="@+id/text_view_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/metropolis_bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/text_view_qno"
+                android:layout_marginTop="100dp"
+                android:text=". In the text below some words are missing. Choose the correct word to fill each blank from the box below. These are more words than you need to complete the exercise."
+                />
+
+            <LinearLayout
+                android:id="@+id/layout_paragraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_q"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_qno"
+                    tools:text="The morality of the welfare state "/>
+
+                <TextView
+                    android:id="@+id/choice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" [1] " />
+
+                <TextView
+                    android:id="@+id/text_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="on contribution and responsibility. Since some people don't "
+                    />
+
+                <TextView
+                    android:id="@+id/choice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" [2] "
+                    />
+
+                <TextView
+                    android:id="@+id/text_view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="and many are irresponsible, the choice of those who do contribute and are responsible is either to"/>
+
+                <TextView
+                    android:id="@+id/choice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" [3] "/>
+
+                <TextView
+                    android:id="@+id/text_view4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="the free riders, refuse to pay for the effects of their irresponsibility or trust the state to "
+                    />
+
+                <TextView
+                    android:id="@+id/choice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" [4] "
+                    />
+
+                <TextView
+                    android:id="@+id/text_view5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="them. Hence the government campaigns"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/choice5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" [5] "
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/text_view_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="smoking, alcoholism, obesity and gas guzzling the first two solidly in place, the other two ramping up. But the British state now goes further: it acts in favor of sexual and racial minorities. In the case of gay men and women this means progressively removing the legal disadvantages under which they have lived, and ensuring that society as a whole"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/choice6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" [6] "
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/text_view_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="the new order."
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/text_view_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_paragraph"
+                android:text="Correct Answer are "
+                android:visibility="gone"
+                android:fontFamily="@font/metropolis_bold"
+                />
+
+            <TextView
+                android:id="@+id/text_view_solution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_answer"
+                android:visibility="gone"
+                android:textColor="@android:color/holo_orange_dark"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottom"
+        android:background="@color/fillbackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="against"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="effects"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:id="@+id/option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bear"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/option4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="affects"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:id="@+id/option5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="depends"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:id="@+id/option6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="contribute"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/option7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="observes"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/option8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tolerate"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/option9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="educate"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        >
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="solution"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:rippleColor="@color/rippleButton"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:layout_marginEnd="8dp"
+            app:rippleColor="@color/rippleButton"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

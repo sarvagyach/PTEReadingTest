@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/result"
+    tools:context=".FITBTestResultFragment"
+    >
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YOUR TOTAL SCORE"
+        android:background="@android:color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/metropolis_regular"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/icon"
+        android:drawablePadding="24dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/text_view_mainscore"
+        android:gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:textSize="80sp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_view_score"
+        android:text="Your Total Score is "
+        android:layout_marginTop="16dp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linear_layout"
+        android:fontFamily="@font/metropolis_bold"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="return to menu"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

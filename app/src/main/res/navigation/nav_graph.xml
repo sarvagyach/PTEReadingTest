@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.g.firestoretest.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_MCSAFragment"
+            app:destination="@id/MCSAFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_MCMAFragment"
+            app:destination="@id/MCMAFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_RPFragment"
+            app:destination="@id/RPFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_FITBFragment"
+            app:destination="@id/FITBFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_WFITBFragment"
+            app:destination="@id/WFITBFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MCSAFragment"
+        android:name="com.g.firestoretest.MCSAFragment"
+        android:label="fragment_mcsa"
+        tools:layout="@layout/fragment_mcsa" >
+        <action
+            android:id="@+id/action_MCSAFragment_to_MCSATestFragment"
+            app:destination="@id/MCSATestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MCSATestFragment"
+        android:name="com.g.firestoretest.MCSATestFragment"
+        android:label="fragment_mcsatest"
+        tools:layout="@layout/fragment_mcsatest" >
+        <argument
+            android:name="testno"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_MCSATestFragment_to_MCSATestResultFragment"
+            app:destination="@id/MCSATestResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MCSATestResultFragment"
+        android:name="com.g.firestoretest.MCSATestResultFragment"
+        android:label="fragment_mcsatest_result"
+        tools:layout="@layout/fragment_mcsatest_result" >
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_MCSATestResultFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MCMAFragment"
+        android:name="com.g.firestoretest.MCMAFragment"
+        android:label="fragment_mcma"
+        tools:layout="@layout/fragment_mcma" >
+        <action
+            android:id="@+id/action_MCMAFragment_to_MCMATestFragment2"
+            app:destination="@id/MCMATestFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/MCMATestFragment2"
+        android:name="com.g.firestoretest.MCMATestFragment"
+        android:label="fragment_mcmatest"
+        tools:layout="@layout/fragment_mcmatest" >
+        <argument
+            android:name="testno"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_MCMATestFragment2_to_MCMATestResultFragment"
+            app:destination="@id/MCMATestResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MCMATestResultFragment"
+        android:name="com.g.firestoretest.MCMATestResultFragment"
+        android:label="fragment_mcmatest_result"
+        tools:layout="@layout/fragment_mcmatest_result" >
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_MCMATestResultFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RPFragment"
+        android:name="com.g.firestoretest.RPFragment"
+        android:label="fragment_r"
+        tools:layout="@layout/fragment_r" >
+        <action
+            android:id="@+id/action_RPFragment_to_RPTestFragment"
+            app:destination="@id/RPTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RPTestFragment"
+        android:name="com.g.firestoretest.RPTestFragment"
+        android:label="fragment_rptest"
+        tools:layout="@layout/fragment_rptest" >
+        <argument
+            android:name="testno"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_RPTestFragment_to_RPTestResultFragment"
+            app:destination="@id/RPTestResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RPTestResultFragment"
+        android:name="com.g.firestoretest.RPTestResultFragment"
+        android:label="fragment_rptest_result"
+        tools:layout="@layout/fragment_rptest_result" >
+        <argument
+            android:name="score"
+            app:argType="float"
+            android:defaultValue="0f" />
+        <action
+            android:id="@+id/action_RPTestResultFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FITBFragment"
+        android:name="com.g.firestoretest.FITBFragment"
+        android:label="fragment_fitb"
+        tools:layout="@layout/fragment_fitb" >
+        <action
+            android:id="@+id/action_FITBFragment_to_FITBTestFragment"
+            app:destination="@id/FITBTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FITBTestFragment"
+        android:name="com.g.firestoretest.FITBTestFragment"
+        android:label="fragment_fitbtest"
+        tools:layout="@layout/fragment_fitbtest" >
+        <argument
+            android:name="testno"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_FITBTestFragment_to_FITBTestResultFragment"
+            app:destination="@id/FITBTestResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FITBTestResultFragment"
+        android:name="com.g.firestoretest.FITBTestResultFragment"
+        android:label="fragment_fitbtest_result"
+        tools:layout="@layout/fragment_fitbtest_result" >
+        <argument
+            android:name="score"
+            app:argType="float"
+            android:defaultValue="0.00f" />
+        <action
+            android:id="@+id/action_FITBTestResultFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/WFITBFragment"
+        android:name="com.g.firestoretest.WFITBFragment"
+        android:label="fragment_wfitb"
+        tools:layout="@layout/fragment_wfitb" >
+        <action
+            android:id="@+id/action_WFITBFragment_to_WFITBTestFragment"
+            app:destination="@id/WFITBTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/WFITBTestFragment"
+        android:name="com.g.firestoretest.WFITBTestFragment"
+        android:label="fragment_wfitbtest"
+        tools:layout="@layout/fragment_wfitbtest" >
+        <argument
+            android:name="testno"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_WFITBTestFragment_to_WFITBTestResultFragment"
+            app:destination="@id/WFITBTestResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/WFITBTestResultFragment"
+        android:name="com.g.firestoretest.WFITBTestResultFragment"
+        android:label="fragment_wfitbtest_result"
+        tools:layout="@layout/fragment_wfitbtest_result" >
+        <argument
+            android:name="score"
+            app:argType="float"
+            android:defaultValue="0.00f" />
+        <action
+            android:id="@+id/action_WFITBTestResultFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RPTestFragment"
+    >
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Re-Order Paragraphs- Test"
+        android:textSize="18sp"
+        android:fontFamily="@font/metropolis_regular"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:padding="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/icon"
+        android:drawablePadding="13dp"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="46dp"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_qno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:fontFamily="@font/metropolis_bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                tools:text="1"
+                />
+
+            <TextView
+                android:id="@+id/text_view_qn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/metropolis_bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/text_view_qno"
+                android:layout_marginTop="100dp"
+                android:text=". The paragraphs have been placed in a random order. Give the paragraphs with correct order number"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_qn">
+
+                <TextView
+                    android:id="@+id/text_view_option1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    tools:text="[A] Another example of an endothermic reaction is the cold packs used by athletes to treat injuries."
+                    android:layout_weight="4"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_text1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLength="1"
+                    android:background="@android:drawable/edit_text"
+                    android:inputType="numberSigned"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_1">
+
+                <TextView
+                    android:id="@+id/text_view_option2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    tools:text="[B] When it is mixed with water in your mouth, an endothermic reaction occurs, taking heat energy from your mouth and making it feel cooler."
+                    android:layout_weight="4"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_text2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLength="1"
+                    android:background="@android:drawable/edit_text"
+                    android:inputType="numberSigned"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_2">
+
+                <TextView
+                    android:id="@+id/text_view_option3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    tools:text="[C] Sherbet powder is a mix of baking soda and citric acid. "
+                    android:layout_weight="4"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_text3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLength="1"
+                    android:background="@android:drawable/edit_text"
+                    android:inputType="numberSigned"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_3">
+
+                <TextView
+                    android:id="@+id/text_view_option4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    tools:text="[D] This process is endothermic-taking heat energy from the surroundings and cooling the injured part of your body. In this way, the cold pack acts as an ice pack."
+                    android:layout_weight="4"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_text4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLength="1"
+                    android:background="@android:drawable/edit_text"
+                    android:inputType="numberSigned"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_4"
+                android:paddingBottom="70dp">
+
+                <TextView
+                    android:id="@+id/text_view_option5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    tools:text="[E] An analogy can be made to the Highway Code for driving. Drivers know the code and have indeed been tested on it to obtain a driving license."
+                    android:layout_weight="4"
+                    android:visibility="gone"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_text5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLength="1"
+                    android:background="@android:drawable/edit_text"
+                    android:inputType="numberSigned"
+                    android:visibility="gone"
+
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/text_view_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_5"
+                android:text="Correct Order is "
+                android:visibility="gone"
+                android:fontFamily="@font/metropolis_bold"
+                />
+
+            <TextView
+                android:id="@+id/text_view_solution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_answer"
+                android:textColor="@android:color/holo_orange_dark"
+                android:paddingBottom="70dp"
+                android:visibility="gone"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/text_view_perquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linear_layout"
+        android:fontFamily="@font/metropolis_bold"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        >
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="solution"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:layout_marginEnd="8dp"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

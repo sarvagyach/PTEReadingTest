@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MCMATestFragment"
+    >
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiple Choice Multiple Answers-Test"
+        android:textSize="18sp"
+        android:fontFamily="@font/metropolis_bold"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:padding="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/icon"
+        android:drawablePadding="13dp"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="46dp"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_qno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:fontFamily="@font/metropolis_bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                tools:text="1"
+                />
+
+            <TextView
+                android:id="@+id/text_view_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/text_view_qno"
+                android:fontFamily="@font/metropolis_bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text=". Read the text and answer the question by selecting all the correct response. More than one response is correct."
+                />
+
+            <TextView
+                android:id="@+id/text_view_passage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_q"
+                tools:text="Researchers from MIT and Google recently showed off a machine learning algorithm capable of automatically retouching photos just like a professional photographer. Snap a photo and the neural network identifies exactly how to make it look better-increase contrast a smidge, tone down brightness, whatever-and apply the changes in less than 20 milliseconds.
+                'That’s 50 times a second,' says Michael Gharbi, an MIT doctoral student and lead author of the paper. Gharbi’s algorithm transforms photos so fast you can see the edited version in the viewfinder before you snap the picture.
+                Gharbi started working with researchers from Google last year to explore how neural networks might learn to mimic specific photographic styles. It follows similar analysis that German researchers completed in 2015 when they built a neural network that could imitate the styles of painters like Van Gogh and Picasso. The idea, Gharbi says, is to make it easier to produce professional-grade images without opening an editing app.Think of the algorithm as an automatic filter but with more nuance. Most filters apply editing techniques to the entire image, regardless of whether it needs it. Gharbi’s algorithm can pinpoint specific features within an image and apply the appropriate improvements. 'Usually every pixel gets the same transformation,' he says. 'It becomes more interesting when you have images that need to be retouched in specific areas.' The algorithm might learn, for example, to automatically brighten a face in a selfie with a sunny background. You could train the network to increase the saturation of water or bump up the green in trees when it recognizes a landscape photo."
+                android:fontFamily="@font/metropolis_regular"
+                />
+
+            <TextView
+                android:id="@+id/text_view_mainquestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_passage"
+                tools:text="Which of the following statements can be supported by the text?"
+                android:fontFamily="@font/metropolis_bold"/>
+
+            <CheckBox
+                android:id="@+id/check_box1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_mainquestion"
+                tools:text="A. The difference between most photo filters and Gharbi’s algorithm is that it applies changes only to the areas it determines needs them."
+                />
+
+            <CheckBox
+                android:id="@+id/check_box2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_box1"
+                tools:text="B. Gharbi’s research expands on 2015 German research that found a way to imitate the styles of famous painters."
+                />
+
+            <CheckBox
+                android:id="@+id/check_box3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_box2"
+                tools:text="C. Researches developed a machine learning algorithm that retouches photos more professionally than a human expert. "
+                />
+
+            <CheckBox
+                android:id="@+id/check_box4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_box3"
+                tools:text="D. The algorithm is so fast that it can be applied in the camera’s viewfinder. "
+                />
+
+            <CheckBox
+                android:id="@+id/check_box5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_box4"
+                tools:text="E. The algorithm is expected to replace human photo retouching experts."
+                />
+
+
+            <TextView
+                android:id="@+id/text_view_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_box5"
+                android:text="Correct Answer are "
+                android:visibility="gone"
+                android:fontFamily="@font/metropolis_bold"
+                />
+
+            <TextView
+                android:id="@+id/text_view_solution1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_answer"
+                android:textColor="@android:color/holo_orange_dark"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/text_view_solution2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_solution1"
+                android:textColor="@android:color/holo_orange_dark"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/text_view_solution3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_solution2"
+                android:textColor="@android:color/holo_orange_dark"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/text_view_solution4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_solution3"
+                android:textColor="@android:color/holo_orange_dark"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/text_view_solution5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_solution4"
+                android:textColor="@android:color/holo_orange_dark"
+                android:visibility="gone"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        >
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="solution"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:layout_marginEnd="8dp"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
